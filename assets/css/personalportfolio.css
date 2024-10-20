@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background-color: #f39f51;
+    padding: 15px;
+    color: #000000;
+}
+
+.navigation {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.search-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+}
+
+.search-container input {
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.search-container i {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-section {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-me {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.intro-text {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.description-text {
+    font-size: 16.5px;
+    padding: 15px 0;
+}
+
+.button-container {
+    margin: 10px;
+}
+
+.button-container button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between buttons */
+}
+
+.button-container .contact-button {
+    background-color: rgb(136, 115, 239);
+}
+.button-container .contact-button:hover {
+    background-color: rgb(157, 139, 247);
+}
+.button-container .portfolio-button {
+    background-color: transparent;
+    color: black;
+}
+.button-container .portfolio-button:hover {
+    background-color: aliceblue;
+    color: black;
+}
+.social-media-icons {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.social-media-icons span {
+    margin-right: 10px;
+}
+
+.social-media-icons i {
+    padding: 14px;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 50%;
+}
+.social-media-icons i:hover {
+    background-color: rgb(240, 239, 239);
+    cursor: pointer;
+}
+.profile-image {
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+}
+.profile-image img {
+    width: 70%;
+}
+.skills-section {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    background-color: rgb(252, 218, 105); /* Màu vàng cho phần skills */
+    min-height: 500px;
+}
+
+.skills-overview,
+.experience-section {
+    width: 50%;
+    float: left; /* Change to float for better compatibility */
+    padding: 20px;
+}
+
+.skills-icons {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.skills-icons i {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px; /* Giữ cho icon nằm giữa phần tử */
+    font-size: 50px; /* Kích thước font cho icon */
+    padding: 0;
+    margin: 10px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 50%; 
+    color: rgb(54, 52, 52);
+    text-align: center; 
+}
+
+.experience-item {
+    font-size: 25px;
+    line-height: 100px;
+}
+
+.bold {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Phần Projects */
+.projects-section {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    min-height: 500px;
+}
+
+.projects-overview,
+.project-details {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.project-item, .project-list {
+    line-height: 50px;
+    list-style-type: none;
+}
+/* Phần Contact */
+.contact-section {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    background-color: rgb(252, 218, 105); /* Màu vàng cho phần contact */
+    min-height: 500px;
+}
+
+.contact-overview,
+.contact-form {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.contact-list {
+    list-style-type: none;
+}
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(136, 115, 239);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .about-me, .profile-image, .skills-overview, .experience-section, .projects-overview, .project-details, .contact-overview, .contact-form {
+        float: none;
+        width: 100%;
+    }
+}
