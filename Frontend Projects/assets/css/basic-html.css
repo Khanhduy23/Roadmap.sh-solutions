@@ -1,0 +1,171 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body & Container Styling */
+html, body {
+    font-family: Cursive, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+    border: 2px solid black;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+    height: 60px;
+}
+
+.name h1 {
+    color: green;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Background Content */
+.background-content {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Main Content & Layout */
+.container-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Sử dụng Grid để tạo 3 cột */
+    gap: 10px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Center Content */
+.content-center {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.work-experience, .opensource-work {
+    border: 2px solid black;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Education Section */
+.education {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education ul li {
+    margin-bottom: 5px;
+}
+
+/* Teacher Reviews */
+.teacher-reviews {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.review-box {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.review-box:nth-child(3n) {
+    margin-right: 0; /* Bỏ margin cho review box cuối cùng trong hàng */
+}
+
+.author {
+    color: gray;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Chuyển đổi layout cho màn hình nhỏ */
+    .container-main {
+        grid-template-columns: repeat(2, 1fr); /* 2 cột cho màn hình nhỏ */
+    }
+    
+    .sidebar,
+    .education {
+        flex: 1; /* Đảm bảo các phần tử chiếm không gian đều nhau */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Chuyển đổi layout cho màn hình rất nhỏ */
+    .container-main {
+        grid-template-columns: 1fr; /* 1 cột cho màn hình di động */
+    }
+    
+    header {
+        flex-direction: column; /* Chuyển header thành cột */
+        align-items: flex-start; /* Căn trái các phần tử trong header */
+    }
+    
+    header nav ul {
+        flex-direction: row; /* Các liên kết trong nav trở thành cột */
+    }
+
+    .review-box {
+        width: 100%; /* Đảm bảo review box chiếm 100% chiều rộng */
+    }
+}
