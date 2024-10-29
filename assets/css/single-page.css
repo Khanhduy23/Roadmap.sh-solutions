@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container-main {
+    max-width: 1000px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.border {
+    width: 80%;
+    border-top: 2px solid black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header .title {
+    color: green;
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+nav {
+    width: 100%;
+}
+
+nav > ul {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    color: green;
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.institution {
+    color: rgb(0, 119, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav > ul {
+        width: 100%;
+    }
+
+    nav > ul > li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .container-main {
+        padding: 20px;
+    }
+}
