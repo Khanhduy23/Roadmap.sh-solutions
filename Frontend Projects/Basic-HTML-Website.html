@@ -2,48 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Basic HTML Website of Nguyen Khanh Duy">
-    <meta name="keywords" content="CV, Profile, HTML, Frontend Developer, Basic HTML Website">
+    <meta name="description" content="Nguyen Khanh Duy's portfolio showcasing projects and experience as a Junior Frontend Developer.">
+    <meta name="keywords" content="Portfolio, Nguyen Khanh Duy, Frontend Developer, Projects, HTML, Profile">
     <meta name="author" content="Nguyen Khanh Duy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Nguyen Khanh Duy - Junior Frontend Developer">
-    <meta property="og:description" content="Basic HTML Website of Nguyen Khanh Duy">
-    <meta property="og:image" content="path/to/your/image.jpg"> <!-- Thay bằng URL ảnh đại diện -->
-    <meta property="og:url" content="http://example.com"> <!-- URL của trang web -->
-    <title>Basic HTML Website</title>
+    <meta property="og:description" content="Explore the projects and experience of Nguyen Khanh Duy, a dedicated frontend developer with a passion for web development.">
+    <meta property="og:image" content="assets/img/profile-image.jpg"> <!-- Replace with your actual image path -->
+    <meta property="og:url" content="http://yourwebsite.com"> <!-- Replace with your actual website URL -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Nguyen Khanh Duy - Portfolio</title>
     <link rel="icon" href="assets/img/favicon1.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/basic-html.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-parent">
         <!-- Header Section -->
         <header>
             <div class="name">
                 <h1>Nguyen Khanh Duy</h1>
             </div>
-            <nav class="right">
+            <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-                    <li><a href="projects.html">/ Projects</a></li>
-                    <li><a href="articles.html">/ Articles</a></li>
-                    <li><a href="contact.html">/ Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- Background Content -->
-        <div class="background-content">
+        <section class="background-content">
             <h2>Frontend Developer</h2>
-            <p>HTML only with proper layout, no styling</p>
-        </div>
+            <p>A structured HTML profile layout with attention to accessibility and SEO.</p>
+        </section>
 
         <!-- Main Content -->
         <main>
-            <!-- <section class="intro">
-                <h2>About Me</h2>
-                <p>This is a basic HTML profile page for Nguyen Khanh Duy, a Junior Frontend Developer.</p>
-            </section> -->
-
             <div class="container-main">
                 <!-- Sidebar Section -->
                 <aside class="sidebar">
@@ -63,23 +60,22 @@
                 <section class="content-center">
                     <article class="work-experience">
                         <h2>Work Experience</h2>
-                        <p>roadmap.sh</p>
-                        <p>Solved all the frontend projects</p>
-                        <a href="#">Visit my Profile</a>
+                        <p>roadmap.sh - Solved all frontend challenges available.</p>
+                        <a href="#" aria-label="Visit my profile on roadmap.sh">Visit my Profile</a>
                     </article>
 
                     <article class="opensource-work">
                         <h2>Open Source Work</h2>
-                        <p>Contributed to 50 open-source projects. Created personal projects with 200 GitHub stars.</p>
-                        <a href="#">Visit my GitHub Profile</a>
+                        <p>Contributed to over 50 open-source projects and developed several personal projects that gained 200+ GitHub stars.</p>
+                        <a href="#" aria-label="Visit my GitHub profile">Visit my GitHub Profile</a>
                     </article>
                 </section>
 
                 <!-- Education Section -->
                 <section class="education">
                     <h2>Education</h2>
-                    <p>Graduated with a 3.76 out of 4 CGPA. Winner of Acme Hackathon and organized 30 sessions.</p>
-                    <h3>Courses I took:</h3>
+                    <p>Graduated with a CGPA of 3.76/4. Winner of the Acme Hackathon and organized 30+ learning sessions.</p>
+                    <h3>Courses Taken:</h3>
                     <ul>
                         <li>Object Oriented Programming</li>
                         <li>Data Structures and Algorithms</li>
@@ -96,25 +92,33 @@
 
             <!-- Teacher Reviews Section -->
             <section class="teacher-reviews">
-                <h2>Reviews from my Teachers</h2>
-                <div class="review-box">
-                    <p>"John Doe was a brilliant student; always stood out with his assignments."</p>
-                    <p class="author">- Jane Doe,<br> Assistant Professor</p>
-                </div>
-                <div class="review-box">
-                    <p>"John Doe was a brilliant student; always stood out with his assignments."</p>
-                    <p class="author">- Jane Doe,<br> Assistant Professor</p>
-                </div>
-                <div class="review-box">
-                    <p>"John Doe was a brilliant student; always stood out with his assignments."</p>
-                    <p class="author">- Jane Doe,<br> Assistant Professor</p>
+                <h2>Reviews from My Teachers</h2>
+                <div class="container-box-re">
+                    <div class="review-box">
+                        <blockquote>
+                            <p>"Khanh Duy was an exceptional student, constantly exceeding expectations with his assignments."</p>
+                            <footer class="ft-quote">- Jane Doe, Assistant Professor</footer>
+                        </blockquote>
+                    </div>
+                    <div class="review-box">
+                        <blockquote>
+                            <p>"Khanh Duy demonstrated remarkable dedication and a keen interest in all of his projects."</p>
+                            <footer class="ft-quote">- Michael Nguyen, Senior Lecturer</footer>
+                        </blockquote>
+                    </div>
+                    <div class="review-box">
+                        <blockquote>
+                            <p>"A standout student with a unique approach to problem-solving and a positive learning attitude."</p>
+                            <footer class="ft-quote">- Emily Tran, Professor</footer>
+                        </blockquote>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!-- Footer Section -->
         <footer>
-            <p>&#169; All rights reserved 2025</p>
+            <p>&#169; 2025 Nguyen Khanh Duy. All rights reserved.</p>
         </footer>
     </div>
 </body>
