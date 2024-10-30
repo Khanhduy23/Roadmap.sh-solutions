@@ -15,9 +15,18 @@
     <title>Nguyen Khanh Duy - Portfolio</title>
     <link rel="icon" href="assets/img/favicon1.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/personal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-parent">
+    <button type="button" id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            document.documentElement.setAttribute('data-theme', currentTheme == 'dark' ? '' : 'dark');
+        });
+    </script>
+    <div class="container-parent border-box">
         <!-- Header Section -->
         <header>
             <div class="name">
@@ -41,7 +50,7 @@
 
         <!-- Main Content -->
         <main>
-            <div class="container-main">
+            <div class="container-main border-box">
                 <!-- Sidebar Section -->
                 <aside class="sidebar">
                     <ul>
@@ -57,7 +66,7 @@
                 </aside>
 
                 <!-- Main Section for Career and Experience -->
-                <section class="content-center">
+                <section class="content-center border-box">
                     <article class="work-experience">
                         <h2>Work Experience</h2>
                         <p>roadmap.sh - Solved all frontend challenges available.</p>
@@ -94,19 +103,19 @@
             <section class="teacher-reviews">
                 <h2>Reviews from My Teachers</h2>
                 <div class="container-box-re">
-                    <div class="review-box">
+                    <div class="review-box border-box">
                         <blockquote>
                             <p>"Khanh Duy was an exceptional student, constantly exceeding expectations with his assignments."</p>
                             <footer class="ft-quote">- Jane Doe, Assistant Professor</footer>
                         </blockquote>
                     </div>
-                    <div class="review-box">
+                    <div class="review-box border-box">
                         <blockquote>
                             <p>"Khanh Duy demonstrated remarkable dedication and a keen interest in all of his projects."</p>
                             <footer class="ft-quote">- Michael Nguyen, Senior Lecturer</footer>
                         </blockquote>
                     </div>
-                    <div class="review-box">
+                    <div class="review-box border-box">
                         <blockquote>
                             <p>"A standout student with a unique approach to problem-solving and a positive learning attitude."</p>
                             <footer class="ft-quote">- Emily Tran, Professor</footer>

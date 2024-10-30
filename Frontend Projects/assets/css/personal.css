@@ -1,14 +1,30 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+[data-theme='dark'] {
+    --background-color: black;
+    --text-color: white;
+}
+[data-theme='dark'] .border-box {
+    border-color: white; /* Màu viền cho chế độ tối */
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 50px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 body p,li {
     line-height: 1.5;
 }
+
 body .container-parent {
     max-width: 1000px;
     margin: auto;
@@ -97,7 +113,6 @@ main .review-box .ft-quote {
 footer:not(.ft-quote) {
     text-align: center;
     padding: 10px;
-    background-color: aliceblue;
 }
 /* Màn hình siêu lớn */
 @media screen and (min-width: 1921px) {

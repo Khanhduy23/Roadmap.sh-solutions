@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "accessibility",  // Bắt buộc tiêu chuẩn truy cập
+    "security",       // Kiểm tra bảo mật
+    "performance",    // Tối ưu hóa hiệu suất
+    "compatibility"   // Kiểm tra tính tương thích trình duyệt
+  ],
+  "hints": {
+    // Bắt buộc thêm mô tả cho nút
+    "button-type": "error",  
+    // Kiểm tra nếu thẻ img thiếu thuộc tính alt (accessibility)
+    "image-alt": "error", 
+    // Không cho phép các tài nguyên không an toàn trong trang HTTPS (security)
+    "disallow-http": "error",
+    // Chặn inline CSS để tăng khả năng bảo trì (security, performance)
+    "inline-style-disabled": "error",
+    // Giới hạn số lượng script và style trên mỗi trang (performance)
+    "max-styles-per-page": ["error", { "max": 3 }],
+    "max-scripts-per-page": ["error", { "max": 5 }],
+    // Bắt buộc các tài nguyên phải tải qua HTTPS (security)
+    "require-sri": "error",  
+    // Tối ưu hóa thời gian tải trang bằng cách cấu hình tiêu đề cache (performance)
+    "no-html-only-headers": "error",
+    // Đảm bảo nội dung luôn thân thiện với mobile
+    "viewport": "error",
+    // Thực hiện kiểm tra thời gian phản hồi (performance)
+    "http-cache": "error",
+    // Kiểm tra xem có từ khóa meta cho SEO không (SEO)
+    "meta-description": "error",
+    // Khuyến cáo dùng thuộc tính lang trong thẻ HTML (accessibility)
+    "html-has-lang": "warning"
+  }
+}
