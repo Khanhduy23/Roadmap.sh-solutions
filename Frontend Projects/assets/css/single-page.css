@@ -1,90 +1,44 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
-
-html {
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin: 50px;
 }
-
-.container-main {
-    max-width: 1000px;
-    border: 3px solid black;
-    margin: auto;
-    margin-top: 20px;
-    padding: 40px;
-}
-
-.border {
-    width: 80%;
-    border-top: 2px solid black;
-    margin: auto;
-    margin-top: 20px;
-}
-
-header {
-    margin: 20px 0;
-}
-
-header .title {
-    color: green;
-    margin: 10px 0;
-}
-
-ul {
-    padding-left: 20px;
+body p,li {
     line-height: 1.5;
 }
-
+body .container-main {
+    max-width: 1000px;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+}
+.container-main h1,.title {
+    text-shadow: 2px 2px rgb(177, 175, 175);
+    font-size: 2em;
+}
+.container-main .boder-top {
+    border-top: 2px solid rgb(177, 175, 175);
+}
 nav {
     width: 100%;
-}
-
-nav > ul {
-    width: 50%;
-    margin: auto;
+    height: auto;
     text-align: center;
 }
-
-nav > ul > li {
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li {
     display: inline-block;
     padding: 10px;
 }
-
-nav > ul > li > a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-h3 {
+main h3 {
     color: green;
-    margin: 20px 0;
 }
-
-p {
-    line-height: 1.5;
-}
-
-.institution {
-    color: rgb(0, 119, 255);
-    font-size: 20px;
-    font-weight: 500;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav > ul {
-        width: 100%;
-    }
-
-    nav > ul > li {
-        display: block;
-        padding: 5px 0;
-    }
-
-    .container-main {
-        padding: 20px;
-    }
+main .institution {
+    color: blue;
+    font-weight: 700;
 }
