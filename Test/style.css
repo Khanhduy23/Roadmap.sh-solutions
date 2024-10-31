@@ -1,0 +1,375 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 5%);
+}
+.body_parent{
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    display: none;
+    position: fixed;
+    background-color: hsla(0, 0%, 5%, 0.527);
+}
+.changelog_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    height: 90vh;
+    background-color: hsl(0, 0%, 95%);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.changelog_box {
+    background-color: hsl(0, 0%, 5%);
+    border-radius: 15px;
+    color: hsl(0, 0%, 95%);
+}
+
+.changelog_container h1,
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.changelog_container .box_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.changelog_container .box_btn button {
+    padding: 0.5rem 0, 8rem;
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 20rem;
+    font-size: 18px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.changelog_container .box_btn button:hover {
+    background-color: hsl(0, 0%, 15%);
+}
+
+.changelog_box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.changelog_container .box_date {
+    background-color: transparent;
+    width: 40.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px 0px;
+}
+
+
+.changelog_container .line {
+    background-color: white;
+    width: 0.5%;
+}
+
+.changelog_container .box_sentence {
+    background-color: transparent;
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px 0px;
+}
+
+.changelog_container .box_date .span_date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    height: 3rem;
+}
+
+.changelog_container .box_sentence .span_sentence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.line .box_boule {
+    position: absolute;
+    top: 51%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 50;
+    transform: translate(-45%, -50%);
+}
+
+@keyframes bouleTurn {
+    from {
+        transform: translateY(0);
+
+    }
+
+    50% {
+        transform: translateY(10px);
+
+    }
+
+    75% {
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+
+}
+
+.line .boule {
+    transform: translate(-45%, -50%);
+    width: 27px;
+    height: 27px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50%;
+    transition: all ease-out 0.3s;
+    animation: bouleTurn 5s infinite linear;
+}
+
+.b_one1 {
+    background-color: hsl(20, 100%, 50%);
+
+}
+
+.b_two2 {
+    background-color: hsl(96, 100%, 50%);
+
+}
+
+.b_three3 {
+    background-color: hsl(259, 100%, 50%);
+
+}
+
+.b_four4 {
+    background-color: hsl(301, 100%, 50%);
+
+}
+
+.b_five5 {
+    background-color: hsl(348, 100%, 50%);
+
+}
+
+.b_six6 {
+    background-color: hsl(61, 100%, 50%);
+
+}
+
+.b_seven7 {
+    background-color: hsl(167, 100%, 50%);
+
+}
+
+/* Feedback poppup */
+.box_feedback {
+    display: block;
+    top: -40%;
+    z-index: 100;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 27%;
+    height: 24vh;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 95%);
+    transition: all 0.5s ease-out;
+
+}
+
+.feedDisplay {
+    display: flex;
+    top: 35%;
+}
+
+.box_feedback h2 {
+    text-align: center;
+}
+
+/* Feedback poppup */
+
+
+/* ---------------@MEDIA----------------- */
+@media (max-width: 1440px) {
+    .changelog_container {
+
+        width: 65%;
+        height: fit-content;
+        min-height: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .changelog_box {
+        height: 90%;
+        color: hsl(0, 0%, 95%);
+    }
+
+    .changelog_container .box_btn {
+        margin-top: 1rem;
+    }
+
+    .changelog_container .box_btn button {
+        width: 18rem;
+    }
+
+    .line .box_boule {
+        top: 49%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .changelog_container {
+        width: 79%;
+        padding: 1rem 0.9rem;
+    }
+
+    .changelog_box {
+        height: 90%;
+        color: hsl(0, 0%, 95%);
+    }
+
+    .changelog_container .box_btn {
+        margin-top: 1rem;
+    }
+
+    .changelog_container .box_btn button {
+        width: 16rem;
+        padding: 0.9rem 18px;
+        font-size: 15px;
+    }
+
+    .changelog_container .box_date {
+        gap: 24px 0px;
+    }
+
+    .changelog_container .box_sentence {
+        gap: 24px 0px;
+
+    }
+
+    .changelog_container .box_sentence .span_sentence {
+        font-size: 14px;
+    }
+
+    .changelog_container .box_date .span_date {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .changelog_container {
+        width: 95%;
+        padding: 0.8rem 0.7rem;
+    }
+
+    .changelog_box {
+        height: 90%;
+        color: hsl(0, 0%, 95%);
+    }
+
+    .changelog_container .box_btn {
+        margin-top: 1rem;
+    }
+
+    .changelog_container .box_btn button {
+        width: 16rem;
+        padding: 0.9rem 18px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .changelog_container {
+        width: 99%;
+        padding: 0.8rem 0.7rem;
+    }
+
+    .changelog_box {
+        height: 90%;
+        color: hsl(0, 0%, 95%);
+    }
+
+    .changelog_container .box_btn {
+        margin-top: 1rem;
+    }
+
+    .changelog_container .box_btn button {
+        width: 12rem;
+        padding: 0.9rem 18px;
+        font-size: 13px;
+    }
+
+    .changelog_container .box_date {
+        gap: 10px 0px;
+    }
+
+    .changelog_container .box_sentence {
+        gap: 10px 0px;
+
+    }
+
+    .changelog_container .box_sentence .span_sentence {
+        font-size: 11px;
+        padding: 0px 15px;
+        text-align: center;
+    }
+
+    .changelog_container .box_date .span_date {
+        font-size: 11px;
+    }
+
+    .line .box_boule {
+        top: 49%;
+    }
+
+    .line .box_boule .boule {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+/* ---------------@MEDIA----------------- */
