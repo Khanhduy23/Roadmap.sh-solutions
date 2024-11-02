@@ -1,7 +1,9 @@
 # Front-End Projects from Roadmap.sh
 
 This repository contains front-end projects built following the [roadmap.sh](https://roadmap.sh) front-end developer path.
+---
 
+Click on the project name or image to view the full README and live demo of each project.
 ## Projects List
 
 | Project | Screenshot |
