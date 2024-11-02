@@ -1,134 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Nguyen Khanh Duy's portfolio showcasing projects and experience as a Junior Frontend Developer.">
-    <meta name="keywords" content="Portfolio, Nguyen Khanh Duy, Frontend Developer, Projects, HTML, Profile">
-    <meta name="author" content="Nguyen Khanh Duy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Nguyen Khanh Duy - Junior Frontend Developer">
-    <meta property="og:description" content="Explore the projects and experience of Nguyen Khanh Duy, a dedicated frontend developer with a passion for web development.">
-    <meta property="og:image" content="assets/img/profile-image.jpg"> <!-- Replace with your actual image path -->
-    <meta property="og:url" content="http://yourwebsite.com"> <!-- Replace with your actual website URL -->
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Nguyen Khanh Duy - Portfolio</title>
-    <link rel="icon" href="favicon2.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css  ">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta name="description" content="Nguyen Khanh Duy - Frontend Developer specializing in HTML, CSS, and JavaScript.">  
+        <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, Web Development">  
+        <meta name="author" content="Nguyen Khanh Duy">  
+        <meta name="robots" content="index, follow">  
+        <meta name="googlebot" content="index, follow">  
+        <meta name="rating" content="General">  
+        <meta name="distribution" content="Global">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+        <meta name="theme-color" content="#ffffff">  
+        <meta name="revised" content="2025-01-01">  
+    
+        <!-- Open Graph Meta Tags -->  
+        <meta property="og:title" content="Nguyen Khanh Duy - Frontend Developer">  
+        <meta property="og:description" content="Frontend Developer specializing in modern web technologies.">  
+        <meta property="og:image" content="https://example.com/image.jpg">  
+        <meta property="og:url" content="https://example.com">  
+        <meta property="og:type" content="website">  
+        <meta property="og:locale" content="en_US">  
+        <meta property="og:site_name" content="Nguyen Khanh Duy Portfolio">  
+    
+        <!-- Twitter Card Meta Tags -->  
+        <meta name="twitter:card" content="summary_large_image">  
+        <meta name="twitter:title" content="Nguyen Khanh Duy - Frontend Developer">  
+        <meta name="twitter:description" content="Frontend Developer specializing in modern web technologies.">  
+        <meta name="twitter:image" content="https://example.com/image.jpg">  
+        <meta name="twitter:site" content="@yourtwitterhandle">  
+        <meta name="twitter:creator" content="@yourtwitterhandle">  
+    
+        <!-- Canonical Tag -->  
+        <link rel="canonical" href="https://example.com">  
+    
+        <!-- Content Security Policy -->  
+        <meta http-equiv="Content-Security-Policy" content="  
+        default-src 'self';  
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;   
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;  
+    ">   
+        <!-- Structured Data for SEO -->  
+        <script type="application/ld+json">  
+        {  
+          "@context": "https://schema.org",  
+          "@type": "Person",  
+          "name": "Nguyen Khanh Duy",  
+          "jobTitle": "Frontend Developer",  
+          "address": {  
+            "@type": "PostalAddress",  
+            "streetAddress": "123 Main St",  
+            "addressLocality": "City",  
+            "addressRegion": "State",  
+            "postalCode": "12345",  
+            "addressCountry": "Country"  
+          },  
+          "email": "mailto:duy@example.com"  
+        }  
+        </script>  
+    
+        <title>Nguyen Khanh Duy - Frontend Developer</title>  
+        <link rel="stylesheet" href="styles.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="favicon2.ico" type="image/x-icon">  
+    </head>
 <body>
-    <button type="button" id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
-    <script>
-        const toggleButton = document.getElementById('theme-toggle');
-        toggleButton.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            document.documentElement.setAttribute('data-theme', currentTheme == 'dark' ? '' : 'dark');
-        });
-    </script>
-    <div class="container-parent border-box">
-        <!-- Header Section -->
-        <header>
-            <div class="name">
-                <h1>Nguyen Khanh Duy</h1>
-            </div>
-            <nav class="main-nav" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Background Content -->
-        <section class="background-content">
-            <h2>Frontend Developer</h2>
-            <p>A structured HTML profile layout with attention to accessibility and SEO.</p>
-        </section>
-
-        <!-- Main Content -->
-        <main>
-            <div class="container-main border-box">
-                <!-- Sidebar Section -->
-                <aside class="sidebar">
-                    <ul>
-                        <li>
-                            <h2>Projects</h2>
-                            HTML Only Portfolio
-                        </li>
-                        <li>Calculator</li>
-                        <li>Quiz App</li>
-                        <li>Countdown Timer</li>
-                        <li>Product Upcoming Page</li>
-                    </ul>
-                </aside>
-
-                <!-- Main Section for Career and Experience -->
-                <section class="content-center border-box">
-                    <article class="work-experience">
-                        <h2>Work Experience</h2>
-                        <p>roadmap.sh - Solved all frontend challenges available.</p>
-                        <a href="#" aria-label="Visit my profile on roadmap.sh">Visit my Profile</a>
-                    </article>
-
-                    <article class="opensource-work">
-                        <h2>Open Source Work</h2>
-                        <p>Contributed to over 50 open-source projects and developed several personal projects that gained 200+ GitHub stars.</p>
-                        <a href="#" aria-label="Visit my GitHub profile">Visit my GitHub Profile</a>
-                    </article>
-                </section>
-
-                <!-- Education Section -->
-                <section class="education">
-                    <h2>Education</h2>
-                    <p>Graduated with a CGPA of 3.76/4. Winner of the Acme Hackathon and organized 30+ learning sessions.</p>
-                    <h3>Courses Taken:</h3>
-                    <ul>
-                        <li>Object Oriented Programming</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Web Engineering</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Human Computer Interaction</li>
-                        <li>Computer Graphics</li>
-                        <li>Database Management Systems</li>
-                        <li>Distributed Database Systems</li>
-                        <li>Discrete Mathematics</li>
-                    </ul>
-                </section>
-            </div>
-
-            <!-- Teacher Reviews Section -->
-            <section class="teacher-reviews">
-                <h2>Reviews from My Teachers</h2>
-                <div class="container-box-re">
-                    <div class="review-box border-box">
-                        <blockquote>
-                            <p>"Khanh Duy was an exceptional student, constantly exceeding expectations with his assignments."</p>
-                            <footer class="ft-quote">- Jane Doe, Assistant Professor</footer>
-                        </blockquote>
-                    </div>
-                    <div class="review-box border-box">
-                        <blockquote>
-                            <p>"Khanh Duy demonstrated remarkable dedication and a keen interest in all of his projects."</p>
-                            <footer class="ft-quote">- Michael Nguyen, Senior Lecturer</footer>
-                        </blockquote>
-                    </div>
-                    <div class="review-box border-box">
-                        <blockquote>
-                            <p>"A standout student with a unique approach to problem-solving and a positive learning attitude."</p>
-                            <footer class="ft-quote">- Emily Tran, Professor</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer Section -->
-        <footer>
-            <p>&#169; 2025 Nguyen Khanh Duy. All rights reserved.</p>
-        </footer>
+    <div class="light-mode">
+        <button type="button" id="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </button>
     </div>
-</body>
+
+    <header>
+        <h1>Nguyen Khanh Duy</h1>  
+        <nav>  
+            <ul>  
+                <li><a href="#">Home</a></li>  
+                <li><a href="#">Projects</a></li>  
+                <li><a href="#">Articles</a></li>  
+                <li><a href="#">Contact</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+    <main>  
+        <section class="intro container-city">  
+            <h2>Frontend Developer</h2>  
+            <p>HTML only with proper layout, no styling</p>  
+        </section>  
+        <div class="container-grid">
+            <section class="projects">  
+                <h2>Projects</h2>  
+                <ul>  
+                    <li>HTML Only Portfolio</li>  
+                    <li>Calculator</li>  
+                    <li>Quiz App</li>  
+                    <li>Countdown Timer</li>  
+                    <li>Product Upcoming Page</li>  
+                </ul>  
+            </section>  
+            <section class="work-experience">  
+                <h2>Work Experience</h2>  
+                <article>  
+                    <h3>roadmap.sh</h3>  
+                    <p>Solved all the frontend projects</p>  
+                    <a href="#">Visit my Profile</a>  
+                </article>  
+                <article>  
+                    <h3>OpenSource Work</h3>  
+                    <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>  
+                    <a href="#">Visit my GitHub Profile</a>  
+                </article>  
+            </section>  
+            <section class="education">  
+                <h2>Education</h2>  
+                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>  
+                <h3>Courses I took:</h3>  
+                <ul>  
+                    <li>Object Oriented Programming</li>  
+                    <li>Data Structures and Algorithms</li>  
+                    <li>Web Engineering</li>  
+                    <li>Artificial Intelligence</li>  
+                    <li>Human Computer Interaction</li>  
+                    <li>Database Management Systems</li>  
+                    <li>Distributed Database Systems</li>  
+                    <li>Discrete Mathematics</li>  
+                </ul>  
+            </section> 
+        </div>
+        <section class="reviews">  
+            <h2>Reviews from my Teachers</h2>  
+            <div class="container-reviews">
+                <div class="review">  
+                    <p>John doe was a brilliant student; always stood out with his assignments.</p>  
+                    <div class="container-city">
+                        <p>Jane Doe</p>  
+                        <p>Assistant Professor</p>  
+                    </div>
+                </div>  
+                <div class="review">  
+                    <p>John doe was a brilliant student; always stood out with his assignments.</p>  
+                    <div class="container-city">
+                        <p>Jane Doe</p>  
+                        <p>Assistant Professor</p>  
+                    </div>
+                </div>  
+                <div class="review">  
+                    <p>John doe was a brilliant student; always stood out with his assignments.</p>  
+                    <div class="container-city">
+                        <p>Jane Doe</p>  
+                        <p>Assistant Professor</p>  
+                    </div>
+                </div>  
+            </div>
+        </section>  
+    </main>  
+    <footer>  
+        <p>&copy; All rights reserved 2025</p>  
+    </footer>
+    <script src="script.js"></script>  
+</body>  
 </html>

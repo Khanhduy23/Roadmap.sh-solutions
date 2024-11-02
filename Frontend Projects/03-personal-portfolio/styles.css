@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid gray;
+    margin: 5px;
+}
+.light-mode {  
+    background-color: #ffffff; /* Màu nền sáng */  
+    color: #000000; /* Màu chữ tối */  
+}  
+.dark-mode {  
+    background-color: #121212; /* Màu nền tối */  
+    color: #ffffff; /* Màu chữ sáng */  
+}
+.light-mode .fa-moon {
+    color: #ffffff;
+}
+button  {  
+    background: transparent;  
+    border: none;  
+    cursor: pointer;  
+    font-size: 2rem; /* Kích thước biểu tượng */  
+    position: absolute;  
+    top: 1rem;  
+    right: 1rem;  
+}  
+header {
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+    color: green;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: block;
+    padding: 10px;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+main section, header {
+    border: 1px solid gray;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+main section ul li {
+    border: 1px solid gray;
+    padding: 0.6rem;
+}
+main section a {
+    display: block;
+}
+main section h2, h3, p, a {
+   padding: 0.5rem;
+}
+main .review {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0.6rem;
+}
+.container-city p {
+    color: gray;
+    padding: 0.2rem;
+    margin: 0;
+}
+footer {
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 900px) {
+    .container-grid, .container-reviews{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .intro {
+        text-align: center;
+        padding: 3rem;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    main .review {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
