@@ -6,30 +6,62 @@
     <meta name="description" content="Professional resume of a Junior Frontend Developer showcasing skills, experience, and education.">
     <meta name="keywords" content="Junior Frontend Developer, Resume, Web Development, HTML, CSS, JavaScript">
     <meta name="author" content="Your Name">
-    
-    <!-- Open Graph Meta Tags for Social Media -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="Global">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Junior Frontend Developer - Resume">
     <meta property="og:description" content="A resume template for a Junior Frontend Developer including skills, education, and work experience.">
-    <meta property="og:image" content="path/to/your-image.jpg"> <!-- Replace with actual image path -->
-    <meta property="og:url" content="https://yourwebsite.com/resume"> <!-- Replace with actual URL -->
+    <meta property="og:image" content="path/to/your-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/resume">
     <meta property="og:type" content="profile">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Your Website Name">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Junior Frontend Developer - Resume">
     <meta name="twitter:description" content="A resume template for a Junior Frontend Developer including skills, education, and work experience.">
-    <meta name="twitter:image" content="path/to/your-image.jpg"> <!-- Replace with actual image path -->
+    <meta name="twitter:image" content="path/to/your-image.jpg">
+    <meta name="twitter:site" content="@yourusername">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://yourwebsite.com/resume">
 
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self';">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "jobTitle": "Junior Frontend Developer",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Your Street",
+        "addressLocality": "Your City",
+        "addressRegion": "ST",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "email": "mailto:no_reply@example.com"
+    }
+    </script>
 
     <title>Junior Frontend Developer - Resume</title>
-    <link rel="stylesheet" href="assets/css/single-page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main class="resume">
         <header class="resume-header">
-            <h1>Your Name</h1>
+            <h1></h1>
             <p class="job-title">Junior Frontend Developer</p>
             <address>
                 123 Your Street<br>
@@ -84,6 +116,6 @@
             <p>Add your LinkedIn, GitHub profile links</p>
         </section>
     </main>
-    <script src="assets/js/single-page.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
