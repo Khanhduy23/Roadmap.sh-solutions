@@ -3,11 +3,62 @@
     <head>  
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta name="description" content="Nguyen Khanh Duy - Frontend Developer specializing in HTML, CSS, and JavaScript.">  
+        <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, Web Development">  
+        <meta name="author" content="Nguyen Khanh Duy">  
+        <meta name="robots" content="index, follow">  
+        <meta name="googlebot" content="index, follow">  
+        <meta name="rating" content="General">  
+        <meta name="distribution" content="Global">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+        <meta name="theme-color" content="#ffffff">  
+        <meta name="revised" content="2025-01-01">  
+    
+        <meta property="og:title" content="Nguyen Khanh Duy - Frontend Developer">  
+        <meta property="og:description" content="Frontend Developer specializing in modern web technologies.">  
+        <meta property="og:image" content="https://example.com/image.jpg">  
+        <meta property="og:url" content="https://example.com">  
+        <meta property="og:type" content="website">  
+        <meta property="og:locale" content="en_US">  
+        <meta property="og:site_name" content="Nguyen Khanh Duy Portfolio">  
+    
+        <meta name="twitter:card" content="summary_large_image">  
+        <meta name="twitter:title" content="Nguyen Khanh Duy - Frontend Developer">  
+        <meta name="twitter:description" content="Frontend Developer specializing in modern web technologies.">  
+        <meta name="twitter:image" content="https://example.com/image.jpg">  
+        <meta name="twitter:site" content="@yourtwitterhandle">  
+        <meta name="twitter:creator" content="@yourtwitterhandle">  
+    
+        <link rel="canonical" href="https://example.com">  
+    
+        <meta http-equiv="Content-Security-Policy" 
+        content="default-src 'self'; 
+                 style-src 'self' fonts.googleapis.com cdnjs.cloudflare.com; 
+                 font-src 'self' fonts.gstatic.com cdnjs.cloudflare.com;">  
+      
+        <script type="application/ld+json">  
+        {  
+          "@context": "https://schema.org",  
+          "@type": "Person",  
+          "name": "Nguyen Khanh Duy",  
+          "jobTitle": "Frontend Developer",  
+          "address": {  
+            "@type": "PostalAddress",  
+            "streetAddress": "123 Main St",  
+            "addressLocality": "City",  
+            "addressRegion": "State",  
+            "postalCode": "12345",  
+            "addressCountry": "Country"  
+          },  
+          "email": "mailto:duy@example.com"  
+        }  
+        </script>  
+    
         <title>Nguyen Khanh Duy - Frontend Developer</title>  
-        <link rel="stylesheet" href="styles.css">  
+        <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="icon" href="favicon2.ico" type="image/x-icon">  
+        <link rel="icon" href="favicon2.ico" type="image/x-icon">
     </head>
 <body>
     <div class="light-mode">
@@ -15,42 +66,28 @@
             <i class="fas fa-sun"></i>
         </button>
     </div>
-
     <div class="container-main">
         <header>  
             <h1>Nguyen Khanh Duy</h1>  
             <nav>  
                 <ul>  
                     <li><a href="#">Home</a></li>  
-                    <li><a href="#">Projects</a></li>  
-                    <li><a href="#">Articles</a></li>  
-                    <li><a href="#">Contact</a></li>  
+                    <li><a href="#">/ Projects</a></li>  
+                    <li><a href="#">/ Articles</a></li>  
+                    <li><a href="#">/ Contact</a></li>  
                 </ul>  
             </nav>  
-        </header>  
-
+        </header>
+        <div class="container-intro">
             <section class="intro">  
                 <h2>Frontend Developer</h2>  
                 <p>HTML only with proper layout, no styling</p>  
-            </section>  
-
+            </section> 
+        </div>
             <main>
                 <div class="container-grid">
-                    <section class="skills">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>HTML, CSS, JavaScript</li>
-                            <li>React, Vue.js</li>
-                            <li>Git, GitHub</li>
-                            <li>Responsive Design</li>
-                            <li>RESTful APIs</li>
-                            <li>Version Control</li>
-                            <li>Debugging and Testing</li>
-                            <li>Continuous Integration</li>
-                        </ul>
-                    </section>
                     <section class="projects">  
-                        <h2>Projects</h2>  
+                        <h2>Projects</h2>
                         <ul>  
                             <li>HTML Only Portfolio</li>  
                             <li>Calculator</li>  
@@ -77,56 +114,51 @@
                         <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>  
                         <h3>Courses I took:</h3>  
                         <ul>  
-                            <li>Object Oriented Programming</li>  
-                            <li>Data Structures and Algorithms</li>  
-                            <li>Web Engineering</li>  
-                            <li>Artificial Intelligence</li>  
-                            <li>Human Computer Interaction</li>  
-                            <li>Database Management Systems</li>  
-                            <li>Distributed Database Systems</li>  
-                            <li>Discrete Mathematics</li>  
+                            <li>- Object Oriented Programming</li>  
+                            <li>- Data Structures and Algorithms</li>  
+                            <li>- Web Engineering</li>  
+                            <li>- Artificial Intelligence</li>  
+                            <li>- Human Computer Interaction</li>  
+                            <li>- Database Management Systems</li>  
+                            <li>- Distributed Database Systems</li>  
+                            <li>- Discrete Mathematics</li>  
                         </ul>  
                     </section> 
-
                 </div>
-                <section class="reviews">  
+                <div class="container-review">
                     <h2>Reviews from my Teachers</h2>  
                     <div class="container-reviews">
-                        <div class="review">  
+                        <section class="review">  
                             <p>John doe was a brilliant student; always stood out with his assignments.</p>  
-                            <div>
+                            <div class="author">
                                 <p>Jane Doe</p>  
                                 <p>Assistant Professor</p>  
                             </div>
-                        </div>  
-                        <div class="review">  
+                        </section>
+
+                        <section class="review">  
                             <p>John doe was a brilliant student; always stood out with his assignments.</p>  
-                            <div>
+                            <div class="author">
                                 <p>Jane Doe</p>  
                                 <p>Assistant Professor</p>  
                             </div>
-                        </div>  
-                        <div class="review">  
+                        </section>
+
+                        <section class="review">  
                             <p>John doe was a brilliant student; always stood out with his assignments.</p>  
-                            <div>
+                            <div class="author">
                                 <p>Jane Doe</p>  
                                 <p>Assistant Professor</p>  
                             </div>
-                        </div>  
-                        <div class="review">  
-                            <p>John doe was a brilliant student; always stood out with his assignments.</p>  
-                            <div>
-                                <p>Jane Doe</p>  
-                                <p>Assistant Professor</p>  
-                            </div>
-                        </div>  
+                        </section>
+
                     </div>
-                </section>  
+                </div>
             </main>
         <footer>  
             <p>&copy; All rights reserved 2025</p>  
         </footer>  
     </div>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>  
 </html>
