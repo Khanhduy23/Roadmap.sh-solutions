@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <style>
+        .accordion-container {
+            width: 400px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .accordion-item {
+            margin-bottom: 5px;
+        }
+
+        .accordion-question {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-answer {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 2px solid #333;
+            border-right: 2px solid #333;
+            border-bottom: 2px solid #333;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .accordion-question.active + .accordion-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="accordion-container">
+    <div class="accordion-item">
+        <div class="accordion-question" onclick="toggleAccordion(this)">
+            What is roadmap.sh? <span>▼</span>
+        </div>
+        <div class="accordion-answer">
+            roadmap.sh is a community effort to create learning paths, guides, project ideas and other similar content to help developers grow in their careers.
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-question" onclick="toggleAccordion(this)">
+            What are the plans for roadmap.sh? <span>▼</span>
+        </div>
+        <div class="accordion-answer">
+            The roadmap team has plans to add more features, tutorials, and resources to help developers at every stage of their journey.
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-question" onclick="toggleAccordion(this)">
+            How is roadmap.sh built? <span>▼</span>
+        </div>
+        <div class="accordion-answer">
+            roadmap.sh is built using modern web technologies and relies on community contributions to keep the content up-to-date.
+        </div>
+    </div>
+    <!-- Add more FAQ items as needed -->
+</div>
+
+<script>
+    function toggleAccordion(element) {
+        const allQuestions = document.querySelectorAll('.accordion-question');
+        
+        allQuestions.forEach(question => {
+            if (question !== element) {
+                question.classList.remove('active');
+                question.nextElementSibling.style.display = 'none';
+            }
+        });
+
+        element.classList.toggle('active');
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

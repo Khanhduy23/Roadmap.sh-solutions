@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.content {
+    width: 60%;
+    height: 60%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+/* CSS cho popup cookie */
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.cookie-popup .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.cookie-popup .cookie-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cookie-popup .cookie-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.cookie-popup p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.accept-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+}
+
+.accept-btn:hover {
+    background-color: #e0e0e0;
+}

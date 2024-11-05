@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            text-align: center;
+            width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .calculator input,
+        .calculator button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Age Calculator</h2>
+    <label for="birthdate">Enter your birth date:</label>
+    <input type="text" id="birthdate" placeholder="Select your birthdate" readonly>
+    <button onclick="calculateAge()">Calculate</button>
+    <div id="result" class="result"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon/build/global/luxon.min.js"></script>
+<script>
+    // Initialize Flatpickr Datepicker
+    flatpickr("#birthdate", {
+        dateFormat: "d/m/Y",
+        maxDate: "today"
+    });
+
+    function calculateAge() {
+        const birthdateInput = document.getElementById("birthdate").value;
+        const resultDiv = document.getElementById("result");
+
+        if (!birthdateInput) {
+            resultDiv.textContent = "Please select a valid birth date.";
+            return;
+        }
+
+        // Parse the birthdate using Luxon
+        const [day, month, year] = birthdateInput.split("/");
+        const birthdate = luxon.DateTime.local(parseInt(year), parseInt(month), parseInt(day));
+        const now = luxon.DateTime.now();
+
+        if (!birthdate.isValid) {
+            resultDiv.textContent = "Please select a valid birth date.";
+            return;
+        }
+
+        // Calculate the difference in years, months, and days
+        const diff = now.diff(birthdate, ["years", "months", "days"]).toObject();
+        const years = Math.floor(diff.years);
+        const months = Math.floor(diff.months);
+
+        resultDiv.innerHTML = `You are <strong>${years} years ${months} months</strong> old.`;
+    }
+</script>
+
+</body>
+</html>
