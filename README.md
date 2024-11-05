@@ -14,7 +14,7 @@ Click on the project name or image to view the full README and live demo of each
 | [Changelog Component](https://roadmap.sh/projects/changelog-component) | [![Changelog Component](./Frontend%20Projects/04-changelog-component/screenshot.png)](./Frontend%20Projects/04-changelog-component) |
 | [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards) | [![Testimonial Cards](./Frontend%20Projects/05-testimonial-cards/screenshot.png)](./Frontend%20Projects/05-testimonial-cards) |
 | [Datepicker UI](https://roadmap.sh/projects/datepicker-ui) | [![Datepicker UI](./Frontend%20Projects/06-datepicker-ui/screenshot.png)](./Frontend%20Projects/06-datepicker-ui) |
-| [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui) | [![Datepicker UI](./Frontend%20Projects/07-accessible-form-ui/screenshot.png)](./Frontend%20Projects/06-datepicker-ui07-accessible-form-ui) |
+| [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui) | [![Datepicker UI](./Frontend%20Projects/07-accessible-form-ui/screenshot.png)](./Frontend%20Projects/07-accessible-form-ui) |
 
 ---
 
