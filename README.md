@@ -15,7 +15,7 @@ Click on the project name or image to view the full README and live demo of each
 | [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards) | [![Testimonial Cards](./Frontend%20Projects/05-testimonial-cards/screenshot.png)](./Frontend%20Projects/05-testimonial-cards) |
 | [Datepicker UI](https://roadmap.sh/projects/datepicker-ui) | [![Datepicker UI](./Frontend%20Projects/06-datepicker-ui/screenshot.png)](./Frontend%20Projects/06-datepicker-ui) |
 | [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui) | [![Datepicker UI](./Frontend%20Projects/07-accessible-form-ui/screenshot.png)](./Frontend%20Projects/07-accessible-form-ui) |
-
+| [Image Grid Layout](https://roadmap.sh/projects/image-grid) | [![Image Grid Layout](./Frontend%20Projects/08-image-grid-layout/screenshot.png)](./Frontend%20Projects/08-image-grid-layout) |
 ---
 
 Click on the project name or image to view the full README and live demo of each project.

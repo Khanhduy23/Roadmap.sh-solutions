@@ -1,58 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Focus Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: auto;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền */
-        }
-        input:focus {
-            border-color: orange; /* Màu viền khi được focus */
-            outline: none; /* Loại bỏ outline mặc định */
-        }
-    </style>
-</head>
-<body>
-
-    <div class="form-container">
-        <form id="profile-form">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" placeholder="What should we call you?" aria-required="true">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="your-email@example.com" aria-required="true">
-
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" aria-required="true">
-
-            <button type="submit">Submit</button>
-        </form>
+    <title>Image Grid Layout</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="image-grid">
+      <img src="img/image1.avif" alt="Photo 1">
+      <img src="img/image2.avif" alt="Photo 2">
+      <img src="img/image3.avif" alt="Photo 3">
+      <img src="img/image4.avif" alt="Photo 4">
+      <img src="img/image5.avif" alt="Photo 5">
+      <img src="img/image6.avif" alt="Photo 6">
     </div>
-
-</body>
+  </body>
 </html>
