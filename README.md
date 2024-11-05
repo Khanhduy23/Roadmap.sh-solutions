@@ -17,7 +17,7 @@ Click on the project name or image to view the full README and live demo of each
 | [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui) | [![Datepicker UI](./Frontend%20Projects/07-accessible-form-ui/screenshot.png)](./Frontend%20Projects/07-accessible-form-ui) |
 | [Image Grid Layout](https://roadmap.sh/projects/image-grid) | [![Image Grid Layout](./Frontend%20Projects/08-image-grid-layout/screenshot.png)](./Frontend%20Projects/08-image-grid-layout) |
 | [Tooltip UI](https://roadmap.sh/projects/tooltip-ui) | [![Tooltip UI](./Frontend%20Projects/09-tooltip-ui/screenshot.png)](./Frontend%20Projects/09-tooltip-ui) |
-
+| [Tabs](https://roadmap.sh/projects/tooltip-ui) | [![Tabs](./Frontend%20Projects/10-tabs/screenshot.png)](./Frontend%20Projects/10-tabs) |
 ---
 
 Click on the project name or image to view the full README and live demo of each project.
