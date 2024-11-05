@@ -8,28 +8,37 @@
 </head>
 <body>
     <div class="form-container" role="form" aria-labelledby="profile-form-title">
-        <form>
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" placeholder="What should we call you?" aria-required="true">
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" aria-invalid="true" value="john@doe.com">
-            <p class="error-message" id="email-error">Email is already taken</p>
-            
-            <label for="password">Enter Password</label>
-            <div class="password-container">
-                <input type="password" id="password" aria-required="true" aria-describedby="password-help">
-                <button type="button" class="toggle-password" aria-label="Show password">👁️</button>
-            </div>
-            
-            <label for="confirm-password">Confirm Password</label>
-            <div class="password-container">
-                <input type="password" id="confirm-password" aria-required="true">
-                <button type="button" class="toggle-password" aria-label="Show password">👁️</button>
-            </div>
-            
-            <button type="submit" class="submit-button">Update Profile</button>
-        </form>
+        <main>
+            <form id="profile-form" action="/action_page.php" method="post" target="_blank">
+                <label for="fullname">Full Name</label>
+                <div class="info">
+                    <input type="text" id="fullname" placeholder="What should we call you?" aria-required="true">
+                    <span id="fullname-error" class="error-message"></span>
+                </div>
+                
+                <label for="email">Email</label>
+                <div class="info">
+                    <input type="email" id="email" aria-invalid="true" placeholder="duykhanh@gmail.com">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                
+                <label for="password">Enter Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" aria-required="true" aria-describedby="password-help">
+                    <button type="button" class="toggle-password" aria-label="Show password">👁️</button>
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                
+                <label for="confirm-password">Confirm Password</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" aria-required="true">
+                    <button type="button" class="toggle-password" aria-label="Show password">👁️</button>
+                    <span id="confirm-password-error" class="error-message"></span>
+                </div>
+                
+                <button type="submit" class="submit-button">Update Profile</button>
+            </form>
+        </main>
 
         <div class="profile-completeness">
             <div class="progress-circle" aria-label="Profile completeness: 65%">
@@ -45,5 +54,6 @@
             </ul>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

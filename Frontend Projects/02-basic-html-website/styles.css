@@ -28,6 +28,10 @@ nav ul {
 nav ul li {
     padding-left: 1rem;
 }
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
 nav ul li a {
     color: black;
 }
@@ -85,6 +89,11 @@ article {
     margin: 1rem;
     padding: 1rem;
 }
+.review:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
 footer {
     text-align: center;
     margin-top: 1rem;
@@ -93,8 +102,8 @@ footer {
     .container-main {
         border: 2px solid black;
         max-width: 900px;
-        min-height: 100vh;
         margin: auto;
+        padding-bottom: 1rem;
     }
     .container-grid {
         display: grid;
@@ -109,6 +118,11 @@ footer {
     .container-reviews {
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+    .projects ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
     }
 }
 @media screen and (min-width: 2560px) {

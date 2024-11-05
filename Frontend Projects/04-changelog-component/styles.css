@@ -124,10 +124,10 @@ footer a {
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
     }
     .progress1{top:-20px}
-    .progress1{top:-30px}
-    .progress1{top:-10px}
-    .progress1{top:-15px}
-    .progress1{top:-20px}
+    .progress2{top:-30px}
+    .progress3{top:-10px}
+    .progress4{top:-15px}
+    .progress5{top:-20px}
 }
 @media screen and (min-width: 1024px) {
     .space-last, .space-first {

@@ -18,7 +18,7 @@ body {
     margin-bottom: 1rem;
     padding: 1rem;
 }
-.testimonial-firts {
+.testimonial-first {
     margin-bottom: 1rem;
 }
 .testimonial-text-first {
@@ -42,6 +42,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 1rem;
 }
 .testimonial-author img {
@@ -65,7 +66,7 @@ body {
     margin: auto;
 }
 .box-img img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .navigation {
@@ -80,6 +81,10 @@ body {
     align-items: center;
     gap: 0.5rem;
     text-align: center;
+}
+.author-images button:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }
 .author-images button {
     font-size: 1.4rem;

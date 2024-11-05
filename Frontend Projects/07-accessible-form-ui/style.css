@@ -1,70 +1,54 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    background-color: #f9f9f9;
+    padding: 0;
 }
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+}
 .form-container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-    max-width: 600px;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 0.6rem;
+    box-shadow: 2px 2px 5px #333;
 }
-
-form {
-    flex: 1;
+.form-container form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding: 1rem;
+    min-width: 100%;
 }
-
-label {
-    font-weight: bold;
+.form-container label {
+    padding: 0.5rem;
+    margin-top: 1rem;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+main span {
+    color: red;
+    position: absolute;
+    font-size: 0.9rem;
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    left: 60%;
+    top: 100%;
+    transform: translatex(-50%);
+}
+input {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+input:focus {
+    border-color: orange;
+    outline: none;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    outline: 2px solid #007BFF; /* Focus state */
-}
-
-input[aria-invalid="true"] {
-    border-color: #dc3545;
-}
-
-.error-message {
-    color: #dc3545;
-    font-size: 12px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-
-.password-container {
+.password-container, .info {
     position: relative;
 }
-
-.toggle-password {
+.password-container button {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -74,7 +58,6 @@ input[aria-invalid="true"] {
     cursor: pointer;
     font-size: 16px;
 }
-
 .submit-button {
     padding: 10px;
     font-size: 16px;
@@ -83,38 +66,80 @@ input[aria-invalid="true"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: auto;
+    margin-top: 1.5rem;
 }
-
 .submit-button:hover {
     background-color: #333;
 }
-
 .profile-completeness {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
-
 .progress-circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 4px solid #ccc;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 16px;
+    align-items: center;
+    font-size: 1rem;
     font-weight: bold;
+    background: conic-gradient(rgb(23, 170, 23) 0% 65%, #ccc 65% 100%);
+    position: relative;
 }
 
+.progress-circle::before {
+    content: "65%";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
 .completeness-list {
     list-style: none;
     padding: 0;
     font-size: 14px;
     color: #666;
 }
-
 .completeness-list li {
     margin-top: 5px;
+}
+/* @media screen and (max-width: 425px) and (min-width:3210px) {
+    .form-container form {
+        width: 100%;
+    }
+} */
+@media screen and (min-width: 320px) {
+    .form-container input, .password-container, .info{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+   .form-container {
+        min-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+   }
+   .profile-completeness {
+        margin-left: 0.7rem;
+        line-height: 1.5;
+   }
+   main {
+    width: 55%;
+   }
 }
