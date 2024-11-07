@@ -2,156 +2,223 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
-    padding: 0.5rem 0;
+    margin: 0.5rem;
 }
+
+h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-family: cursive;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+.container {
+    box-shadow: 2px 2px 5px gray;
+    max-width: 900px;
+    transition: transform 0.3s ease;
+    border: 1px solid gray;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
 header {
     text-align: center;
-    line-height: 1.5;
+    padding: 1rem;
 }
-header h1 {
-    color: rgb(19, 18, 18);
-    text-shadow: 2px 2px 5px rgb(148, 145, 145);
-}
-header nav {
-    width: 100%;
-    height: 4rem;
-}
+
 nav ul {
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    line-height: 4rem;
+    align-items: center;
 }
+
 nav ul li {
-    padding-left: 1rem;
+    padding: 0.5rem;
 }
+
 nav ul li a {
+    text-decoration: none;
     color: black;
+    display: block;
 }
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #007BFF;
-}
+
 .container-intro {
     text-align: center;
-    padding: 1.2rem;
-    border-bottom: 2px solid gray ;
+    padding: 0 1rem 1rem 1rem;
 }
-.intro p {
-    color: gray;
+
+.container-intro p {
     font-size: 0.8rem;
+    color: gray;
+    padding: 0.5rem;
 }
-main {
+
+.container-intro h2 {
+    font-family: cursive;
+}
+
+main .container-grid {
     width: 100%;
-    line-height: 1.5;
 }
-main h2 {
-    padding-bottom: 1rem;
-}
-main p {
-    padding-left: 0.5rem;
-}
-.projects, .work-experience h2, .education h2, .container-review h2 {
+
+.projects {
+    border: 1px solid gray;
     text-align: center;
 }
-.projects h2{
-    border-bottom: 1px solid gray;
-}
+
 .projects li {
-    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
     background-color: aliceblue;
-    padding: 0.6rem 0;
-    list-style-type: none;
+    padding: 0.5rem;
 }
-.work-experience, .education{
+
+.work-experience {
     border: 1px solid gray;
-    padding: 1rem 0 0 0;
 }
-.education ul {
-    margin-left: 1rem;
-    list-style-type: none;
-    padding-bottom: 1rem;
+
+.work-experience h2 {
+    text-align: center;
 }
-.education h3 {
-    padding-left: 0.5rem;
-}
-article {
-    border: 1px solid gray;
+
+.work-experience article {
     padding: 1rem;
+    border-top: 1px solid gray;
+    line-height: 1.5;
     background-color: aliceblue;
 }
+
+.work-experience a {
+    text-decoration: none;
+    color: rgb(12, 163, 223);
+}
+
+.education {
+    border: 1px solid gray;
+}
+
+.education h2 {
+    text-align: center;
+}
+
+.education h3 {
+    padding-left: 1rem;
+}
+
+.education > p, .education > ul {
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.container-review h2 {
+    text-align: center;
+}
+
 .review {
     border: 1px solid gray;
-    border-radius: 2rem;
+    border-radius: 1rem;
     margin: 1rem;
     padding: 1rem;
 }
-.review:hover {
-    background-color: #f0f0f0;
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
-}
-.author p {
+
+.review > div > p {
     color: gray;
+    padding: 0.5rem;
 }
+
 footer {
     text-align: center;
-    margin-top: 1rem;
+    padding: 1rem;
+    font-family: cursive;
+
 }
+@media screen and (min-width: 320px) {
+    .fa-sun {
+        font-size: 30px;
+        color: orange;
+    }
+    .fa-moon {
+        color: white;
+        font-size: 30px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
-    .container-main {
-        border: 2px solid gray;
-        max-width: 900px;
+    .container {
         margin: auto;
-        padding-bottom: 1rem;
     }
-    .container-grid {
+
+    .container-grid, .container-reviews {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3, 1fr);
     }
-    .projects {
-        border: 1px solid gray;
-    }
-    article, .projects li {
+
+    .projects li, .work-experience article {
         background-color: white;
     }
-    .container-reviews {
-        display: grid;
-        grid-template-columns: auto auto auto;
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
     }
-    .projects ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+
+    h1 {
+        font-size: 2rem;
     }
-}
-@media screen and (min-width: 2560px) {
-    .container-main {
-        max-width: 1200px;
+
+    h2 {
+        font-size: 1.5rem;
     }
-}
-.dark-mode,
-.dark-mode a,
-.dark-mode article, 
-.dark-mode .projects li,
-.dark-mode header h1 {
-    background-color: rgb(46, 45, 45); 
-    color: white;
+
+    h3 {
+        font-size: 1.17rem;
+    }
+
+    .fa-sun {
+        font-size: 50px;
+        color: orange;
+    }
+
+    .fa-moon {
+        color: white;
+        font-size: 50px;
+    }
+
 }
 .light-mode {
-    padding-left: 1rem
+    position: absolute;
 }
-.light-mode button {
+
+#theme-toggle {
+    width: 50px;
+    height: 50px;
     background: none;
     border: none;
-    font-size: 5rem;
 }
-.fa-sun {
-    color: rgba(245, 123, 42, 0.959);
-}
-.fa-moon {
+
+.dark-mode,
+.dark-mode .projects li,
+.dark-mode .work-experience article
+{
+    background-color: rgb(32, 32, 32);
     color: white;
+}
+
+.dark-mode a {
+    text-decoration: underline;
+    color: blue;
 }
